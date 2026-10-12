@@ -36,9 +36,10 @@ export class AppController {
     return this.appService.checkBilangan(nilai);
   }
 
-  // =========================
+
   // SOAL 2 - KONVERSI SUHU
-  // =========================
+  
+  
 
   @Get('suhu/konversi')
   konversiSuhu(
@@ -89,9 +90,9 @@ export class AppController {
     );
   }
 
-  // =========================
+ 
   // SOAL 3 - GENERATOR DERET
-  // =========================
+ 
 
   @Get('deret/:jenis')
   generatorDeret(
@@ -135,9 +136,9 @@ export class AppController {
     );
   }
 
-  // =========================
+  
   // SOAL 4 - NILAI RAPOR
-  // =========================
+
 
   @Post('nilai/hitung')
   hitungNilaiRapor(@Body() body: any) {
@@ -206,9 +207,9 @@ export class AppController {
     );
   }
 
-  // =========================
+  
   // SOAL 5 - KASIR TOKO
-  // =========================
+ 
 
   @Post('kasir/checkout/:member')
   hitungKasir(
